@@ -111,6 +111,62 @@ public class Business {
   @SerializedName(SERIALIZED_NAME_ANNUAL_REPORT)
   private Boolean annualReport;
 
+  public static final String SERIALIZED_NAME_REGISTER_REPORT = "RegisterReport";
+  @SerializedName(SERIALIZED_NAME_REGISTER_REPORT)
+  private Boolean registerReport;
+
+  public static final String SERIALIZED_NAME_CREDIT_CHECK = "CreditCheck";
+  @SerializedName(SERIALIZED_NAME_CREDIT_CHECK)
+  private Boolean creditCheck;
+
+  public static final String SERIALIZED_NAME_CREDIT_REPORT = "CreditReport";
+  @SerializedName(SERIALIZED_NAME_CREDIT_REPORT)
+  private Boolean creditReport;
+
+  public static final String SERIALIZED_NAME_GISA_EXTRACT = "GISAExtract";
+  @SerializedName(SERIALIZED_NAME_GISA_EXTRACT)
+  private Boolean gisaExtract;
+
+  public static final String SERIALIZED_NAME_VR_EXTRACT = "VRExtract";
+  @SerializedName(SERIALIZED_NAME_VR_EXTRACT)
+  private Boolean vrExtract;
+
+  public static final String SERIALIZED_NAME_REGISTER_CHECK = "RegisterCheck";
+  @SerializedName(SERIALIZED_NAME_REGISTER_CHECK)
+  private Boolean registerCheck;
+
+  public static final String SERIALIZED_NAME_TRADE_REGISTER_REPORT = "TradeRegisterReport";
+  @SerializedName(SERIALIZED_NAME_TRADE_REGISTER_REPORT)
+  private Boolean tradeRegisterReport;
+
+  public static final String SERIALIZED_NAME_BENEFICIAL_OWNERS_CHECK = "BeneficialOwnersCheck";
+  @SerializedName(SERIALIZED_NAME_BENEFICIAL_OWNERS_CHECK)
+  private Boolean beneficialOwnersCheck;
+
+  public static final String SERIALIZED_NAME_ANNUAL_ACCOUNTS = "AnnualAccounts";
+  @SerializedName(SERIALIZED_NAME_ANNUAL_ACCOUNTS)
+  private Boolean annualAccounts;
+
+  public static final String SERIALIZED_NAME_FILED_CHANGES = "FiledChanges";
+  @SerializedName(SERIALIZED_NAME_FILED_CHANGES)
+  private Boolean filedChanges;
+
+  public static final String SERIALIZED_NAME_FILED_DOCUMENTS = "FiledDocuments";
+  @SerializedName(SERIALIZED_NAME_FILED_DOCUMENTS)
+  private Boolean filedDocuments;
+
+  public static final String SERIALIZED_NAME_COMPLETE_PLUS = "CompletePlus";
+  @SerializedName(SERIALIZED_NAME_COMPLETE_PLUS)
+  private Boolean completePlus;
+
+  public static final String SERIALIZED_NAME_ARTICLE_OF_AUTHORITY = "ArticleOfAuthority";
+  @SerializedName(SERIALIZED_NAME_ARTICLE_OF_AUTHORITY)
+  private Boolean articleOfAuthority;
+
+  public static final String SERIALIZED_NAME_AGENT_ADDRESS_CHANGE = "AgentAddressChange";
+  @SerializedName(SERIALIZED_NAME_AGENT_ADDRESS_CHANGE)
+  private Boolean agentAddressChange;
+
   public Business() {
   }
 
@@ -544,7 +600,21 @@ public class Business {
         Objects.equals(this.filings, business.filings) &&
         Objects.equals(this.articleOfAssociation, business.articleOfAssociation) &&
         Objects.equals(this.registrationDetails, business.registrationDetails) &&
-        Objects.equals(this.annualReport, business.annualReport);
+        Objects.equals(this.annualReport, business.annualReport) &&
+        Objects.equals(this.registerReport, business.registerReport) &&
+        Objects.equals(this.creditCheck, business.creditCheck) &&
+        Objects.equals(this.creditReport, business.creditReport) &&
+        Objects.equals(this.gisaExtract, business.gisaExtract) &&
+        Objects.equals(this.vrExtract, business.vrExtract) &&
+        Objects.equals(this.registerCheck, business.registerCheck) &&
+        Objects.equals(this.tradeRegisterReport, business.tradeRegisterReport) &&
+        Objects.equals(this.beneficialOwnersCheck, business.beneficialOwnersCheck) &&
+        Objects.equals(this.filedChanges, business.filedChanges) &&
+        Objects.equals(this.filedDocuments, business.filedDocuments) &&
+        Objects.equals(this.annualAccounts, business.annualAccounts) &&
+        Objects.equals(this.completePlus, business.completePlus) &&
+        Objects.equals(this.articleOfAuthority, business.articleOfAuthority) &&
+        Objects.equals(this.agentAddressChange, business.agentAddressChange);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -585,6 +655,20 @@ public class Business {
     sb.append("    articleOfAssociation: ").append(toIndentedString(articleOfAssociation)).append("\n");
     sb.append("    registrationDetails: ").append(toIndentedString(registrationDetails)).append("\n");
     sb.append("    annualReport: ").append(toIndentedString(annualReport)).append("\n");
+    sb.append("    registerReport: ").append(toIndentedString(registerReport)).append("\n");
+    sb.append("    creditCheck: ").append(toIndentedString(creditCheck)).append("\n");
+    sb.append("    creditReport: ").append(toIndentedString(creditReport)).append("\n");
+    sb.append("    gisaExtract: ").append(toIndentedString(gisaExtract)).append("\n");
+    sb.append("    vrExtract: ").append(toIndentedString(vrExtract)).append("\n");
+    sb.append("    registerCheck: ").append(toIndentedString(registerCheck)).append("\n");
+    sb.append("    tradeRegisterReport: ").append(toIndentedString(tradeRegisterReport)).append("\n");
+    sb.append("    beneficialOwnersCheck: ").append(toIndentedString(beneficialOwnersCheck)).append("\n");
+    sb.append("    filedChanges: ").append(toIndentedString(filedChanges)).append("\n");
+    sb.append("    filedDocuments: ").append(toIndentedString(filedDocuments)).append("\n");
+    sb.append("    annualAccounts: ").append(toIndentedString(annualAccounts)).append("\n");
+    sb.append("    completePlus: ").append(toIndentedString(completePlus)).append("\n");
+    sb.append("    articleOfAuthority: ").append(toIndentedString(articleOfAuthority)).append("\n");
+    sb.append("    agentAddressChange: ").append(toIndentedString(agentAddressChange)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -625,6 +709,20 @@ public class Business {
     openapiFields.add("ArticleOfAssociation");
     openapiFields.add("RegistrationDetails");
     openapiFields.add("AnnualReport");
+    openapiFields.add("RegisterReport");
+    openapiFields.add("CreditCheck");
+    openapiFields.add("CreditReport");
+    openapiFields.add("GisaExtract");
+    openapiFields.add("VrExtract");
+    openapiFields.add("RegisterCheck");
+    openapiFields.add("TradeRegisterReport");
+    openapiFields.add("BeneficialOwnersCheck");
+    openapiFields.add("FiledChanges");
+    openapiFields.add("FiledDocuments");
+    openapiFields.add("AnnualAccounts");
+    openapiFields.add("CompletePlus");
+    openapiFields.add("ArticleOfAuthority");
+    openapiFields.add("AgentAddressChange");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

@@ -1,6 +1,6 @@
 # Trulioo SDK for Java #
 
-## Version 3.0.2
+## Version 3.0.4
 
 ### Introduction
 

@@ -114,6 +114,62 @@ public class BusinessDataFields {
   @SerializedName(SERIALIZED_NAME_ANNUAL_REPORT)
   private Boolean annualReport;
 
+  public static final String SERIALIZED_NAME_REGISTER_REPORT = "RegisterReport";
+  @SerializedName(SERIALIZED_NAME_REGISTER_REPORT)
+  private Boolean registerReport;
+
+  public static final String SERIALIZED_NAME_CREDIT_CHECK = "CreditCheck";
+  @SerializedName(SERIALIZED_NAME_CREDIT_CHECK)
+  private Boolean creditCheck;
+
+  public static final String SERIALIZED_NAME_CREDIT_REPORT = "CreditReport";
+  @SerializedName(SERIALIZED_NAME_CREDIT_REPORT)
+  private Boolean creditReport;
+
+  public static final String SERIALIZED_NAME_GISA_EXTRACT = "GISAExtract";
+  @SerializedName(SERIALIZED_NAME_GISA_EXTRACT)
+  private Boolean gisaExtract;
+
+  public static final String SERIALIZED_NAME_VR_EXTRACT = "VRExtract";
+  @SerializedName(SERIALIZED_NAME_VR_EXTRACT)
+  private Boolean vrExtract;
+
+  public static final String SERIALIZED_NAME_REGISTER_CHECK = "RegisterCheck";
+  @SerializedName(SERIALIZED_NAME_REGISTER_CHECK)
+  private Boolean registerCheck;
+
+  public static final String SERIALIZED_NAME_TRADE_REGISTER_REPORT = "TradeRegisterReport";
+  @SerializedName(SERIALIZED_NAME_TRADE_REGISTER_REPORT)
+  private Boolean tradeRegisterReport;
+
+  public static final String SERIALIZED_NAME_BENEFICIAL_OWNERS_CHECK = "BeneficialOwnersCheck";
+  @SerializedName(SERIALIZED_NAME_BENEFICIAL_OWNERS_CHECK)
+  private Boolean beneficialOwnersCheck;
+
+  public static final String SERIALIZED_NAME_ANNUAL_ACCOUNTS = "AnnualAccounts";
+  @SerializedName(SERIALIZED_NAME_ANNUAL_ACCOUNTS)
+  private Boolean annualAccounts;
+
+  public static final String SERIALIZED_NAME_FILED_CHANGES = "FiledChanges";
+  @SerializedName(SERIALIZED_NAME_FILED_CHANGES)
+  private Boolean filedChanges;
+
+  public static final String SERIALIZED_NAME_FILED_DOCUMENTS = "FiledDocuments";
+  @SerializedName(SERIALIZED_NAME_FILED_DOCUMENTS)
+  private Boolean filedDocuments;
+
+  public static final String SERIALIZED_NAME_COMPLETE_PLUS = "CompletePlus";
+  @SerializedName(SERIALIZED_NAME_COMPLETE_PLUS)
+  private Boolean completePlus;
+
+  public static final String SERIALIZED_NAME_ARTICLE_OF_AUTHORITY = "ArticleOfAuthority";
+  @SerializedName(SERIALIZED_NAME_ARTICLE_OF_AUTHORITY)
+  private Boolean articleOfAuthority;
+
+  public static final String SERIALIZED_NAME_AGENT_ADDRESS_CHANGE = "AgentAddressChange";
+  @SerializedName(SERIALIZED_NAME_AGENT_ADDRESS_CHANGE)
+  private Boolean agentAddressChange;
+
   public static final String SERIALIZED_NAME_TELEPHONE = "Telephone";
   @SerializedName(SERIALIZED_NAME_TELEPHONE)
   private String telephone;
@@ -531,6 +587,237 @@ public class BusinessDataFields {
     this.annualReport = annualReport;
   }
 
+  public BusinessDataFields registerReport(Boolean registerReport) {
+    this.registerReport = registerReport;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve register report document
+   * @return registerReport
+   **/
+  @javax.annotation.Nullable
+  public Boolean getRegisterReport() {    return registerReport;  }
+
+  public void setRegisterReport(Boolean registerReport) {
+    this.registerReport = registerReport;
+  }
+
+  public BusinessDataFields creditCheck(Boolean creditCheck) {
+    this.creditCheck = creditCheck;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve credit check document
+   * @return creditCheck
+   **/
+  @javax.annotation.Nullable
+  public Boolean getCreditCheck() {    return creditCheck;  }
+
+  public void setCreditCheck(Boolean creditCheck) {
+    this.creditCheck = creditCheck;
+  }
+
+  public BusinessDataFields creditReport(Boolean creditReport) {
+    this.creditReport = creditReport;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve credit report document
+   * @return creditReport
+   **/
+  @javax.annotation.Nullable
+  public Boolean getCreditReport() {    return creditReport;  }
+
+  public void setCreditReport(Boolean creditReport) {
+    this.creditReport = creditReport;
+  }
+
+  public BusinessDataFields gisaExtract(Boolean gisaExtract) {
+    this.gisaExtract = gisaExtract;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve GISA extract document
+   * @return gisaExtract
+   **/
+  @javax.annotation.Nullable
+  public Boolean getGISAExtract() {    return gisaExtract;  }
+
+  public void setGISAExtract(Boolean gisaExtract) {
+    this.gisaExtract = gisaExtract;
+  }
+
+  public BusinessDataFields vrExtract(Boolean vrExtract) {
+    this.vrExtract = vrExtract;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve VR extract document
+   * @return vrExtract
+   **/
+  @javax.annotation.Nullable
+  public Boolean getVRExtract() {    return vrExtract;  }
+
+  public void setVRExtract(Boolean vrExtract) {
+    this.vrExtract = vrExtract;
+  }
+
+  public BusinessDataFields registerCheck(Boolean registerCheck) {
+    this.registerCheck = registerCheck;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve register check document
+   * @return registerCheck
+   **/
+  @javax.annotation.Nullable
+  public Boolean getRegisterCheck() {    return registerCheck;  }
+
+  public void setRegisterCheck(Boolean registerCheck) {
+    this.registerCheck = registerCheck;
+  }
+
+  public BusinessDataFields tradeRegisterReport(Boolean tradeRegisterReport) {
+    this.tradeRegisterReport = tradeRegisterReport;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve trade register report document
+   * @return tradeRegisterReport
+   **/
+  @javax.annotation.Nullable
+  public Boolean getTradeRegisterReport() {    return tradeRegisterReport;  }
+
+  public void setTradeRegisterReport(Boolean tradeRegisterReport) {
+    this.tradeRegisterReport = tradeRegisterReport;
+  }
+
+  public BusinessDataFields beneficialOwnersCheck(Boolean beneficialOwnersCheck) {
+    this.beneficialOwnersCheck = beneficialOwnersCheck;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve beneficial owners check document
+   * @return beneficialOwnersCheck
+   **/
+  @javax.annotation.Nullable
+  public Boolean getBeneficialOwnersCheck() {    return beneficialOwnersCheck;  }
+
+  public void setBeneficialOwnersCheck(Boolean beneficialOwnersCheck) {
+    this.beneficialOwnersCheck = beneficialOwnersCheck;
+  }
+
+  public BusinessDataFields filedChanges(Boolean filedChanges) {
+    this.filedChanges = filedChanges;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve filed changes document
+   * @return filedChanges
+   **/
+  @javax.annotation.Nullable
+  public Boolean getFiledChanges() {    return filedChanges;  }
+
+  public void setFiledChanges(Boolean filedChanges) {
+    this.filedChanges = filedChanges;
+  }
+
+  public BusinessDataFields filedDocuments(Boolean filedDocuments) {
+    this.filedDocuments = filedDocuments;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve filed documents
+   * @return filedDocuments
+   **/
+  @javax.annotation.Nullable
+  public Boolean getFiledDocuments() {    return filedDocuments;  }
+
+  public void setFiledDocuments(Boolean filedDocuments) {
+    this.filedDocuments = filedDocuments;
+  }
+
+  public BusinessDataFields annualAccounts(Boolean annualAccounts) {
+    this.annualAccounts = annualAccounts;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve annual accounts document
+   * @return annualAccounts
+   **/
+  @javax.annotation.Nullable
+  public Boolean getAnnualAccounts() {    return annualAccounts;  }
+
+  public void setAnnualAccounts(Boolean annualAccounts) {
+    this.annualAccounts = annualAccounts;
+  }
+
+  public BusinessDataFields completePlus(Boolean completePlus) {
+    this.completePlus = completePlus;
+    return this;
+  }
+
+  /**
+   * Whether or not to perform a complete plus transaction
+   * @return completePlus
+   **/
+  @javax.annotation.Nullable
+  public Boolean getCompletePlus() {
+    return completePlus;
+  }
+
+  public void setCompletePlus(Boolean completePlus) {
+    this.completePlus = completePlus;
+  }
+
+  public BusinessDataFields articleOfAuthority(Boolean articleOfAuthority) {
+    this.articleOfAuthority = articleOfAuthority;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve article of authority document
+   * @return articleOfAuthority
+   **/
+  @javax.annotation.Nullable
+  public Boolean getArticleOfAuthority() {
+    return articleOfAuthority;
+  }
+
+  public void setArticleOfAuthority(Boolean articleOfAuthority) {
+    this.articleOfAuthority = articleOfAuthority;
+  }
+
+  public BusinessDataFields agentAddressChange(Boolean agentAddressChange) {
+    this.agentAddressChange = agentAddressChange;
+    return this;
+  }
+
+  /**
+   * Whether or not to retrieve agent address change document
+   * @return agentAddressChange
+   **/
+  @javax.annotation.Nullable
+  public Boolean getAgentAddressChange() {
+    return agentAddressChange;
+  }
+
+  public void setAgentAddressChange(Boolean agentAddressChange) {
+    this.agentAddressChange = agentAddressChange;
+  }
+
+
 
   public BusinessDataFields telephone(String telephone) {
     
@@ -642,6 +929,20 @@ public class BusinessDataFields {
         Objects.equals(this.articleOfAssociation, businessDataFields.articleOfAssociation) &&
         Objects.equals(this.registrationDetails, businessDataFields.registrationDetails) &&
         Objects.equals(this.annualReport, businessDataFields.annualReport) &&
+        Objects.equals(this.registerReport, businessDataFields.registerReport) &&
+        Objects.equals(this.creditCheck, businessDataFields.creditCheck) &&
+        Objects.equals(this.creditReport, businessDataFields.creditReport) &&
+        Objects.equals(this.gisaExtract, businessDataFields.gisaExtract) &&
+        Objects.equals(this.vrExtract, businessDataFields.vrExtract) &&
+        Objects.equals(this.registerCheck, businessDataFields.registerCheck) &&
+        Objects.equals(this.tradeRegisterReport, businessDataFields.tradeRegisterReport) &&
+        Objects.equals(this.beneficialOwnersCheck, businessDataFields.beneficialOwnersCheck) &&
+        Objects.equals(this.filedChanges, businessDataFields.filedChanges) &&
+        Objects.equals(this.filedDocuments, businessDataFields.filedDocuments) &&
+        Objects.equals(this.annualAccounts, businessDataFields.annualAccounts) &&
+        Objects.equals(this.completePlus, businessDataFields.completePlus) &&
+        Objects.equals(this.articleOfAuthority, businessDataFields.articleOfAuthority) &&
+        Objects.equals(this.agentAddressChange, businessDataFields.agentAddressChange) &&
         Objects.equals(this.telephone, businessDataFields.telephone) &&
         Objects.equals(this.countrySpecific, businessDataFields.countrySpecific) &&
         Objects.equals(this.location, businessDataFields.location);
@@ -653,7 +954,7 @@ public class BusinessDataFields {
 
   @Override
   public int hashCode() {
-    return Objects.hash(businessName, tradestyleName, taxIDNumber, businessRegistrationNumber, dayOfIncorporation, monthOfIncorporation, yearOfIncorporation, jurisdictionOfIncorporation, shareholderListDocument, financialInformationDocument, dunsNumber, enhancedProfile, entities, peopleOfSignificantControl, filings, articleOfAssociation, registrationDetails, annualReport, telephone, countrySpecific, location);
+    return Objects.hash(businessName, tradestyleName, taxIDNumber, businessRegistrationNumber, dayOfIncorporation, monthOfIncorporation, yearOfIncorporation, jurisdictionOfIncorporation, shareholderListDocument, financialInformationDocument, dunsNumber, enhancedProfile, entities, peopleOfSignificantControl, filings, articleOfAssociation, registrationDetails, annualReport, registerReport, creditCheck, creditReport, gisaExtract, vrExtract, registerCheck, tradeRegisterReport, beneficialOwnersCheck, filedChanges, filedDocuments, annualAccounts, completePlus, articleOfAuthority, agentAddressChange, telephone, countrySpecific, location);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -685,6 +986,20 @@ public class BusinessDataFields {
     sb.append("    articleOfAssociation: ").append(toIndentedString(articleOfAssociation)).append("\n");
     sb.append("    registrationDetails: ").append(toIndentedString(registrationDetails)).append("\n");
     sb.append("    annualReport: ").append(toIndentedString(annualReport)).append("\n");
+    sb.append("    registerReport: ").append(toIndentedString(registerReport)).append("\n");
+    sb.append("    creditCheck: ").append(toIndentedString(creditCheck)).append("\n");
+    sb.append("    creditReport: ").append(toIndentedString(creditReport)).append("\n");
+    sb.append("    gisaExtract: ").append(toIndentedString(gisaExtract)).append("\n");
+    sb.append("    vrExtract: ").append(toIndentedString(vrExtract)).append("\n");
+    sb.append("    registerCheck: ").append(toIndentedString(registerCheck)).append("\n");
+    sb.append("    tradeRegisterReport: ").append(toIndentedString(tradeRegisterReport)).append("\n");
+    sb.append("    beneficialOwnersCheck: ").append(toIndentedString(beneficialOwnersCheck)).append("\n");
+    sb.append("    filedChanges: ").append(toIndentedString(filedChanges)).append("\n");
+    sb.append("    filedDocuments: ").append(toIndentedString(filedDocuments)).append("\n");
+    sb.append("    annualAccounts: ").append(toIndentedString(annualAccounts)).append("\n");
+    sb.append("    completePlus: ").append(toIndentedString(completePlus)).append("\n");
+    sb.append("    articleOfAuthority: ").append(toIndentedString(articleOfAuthority)).append("\n");
+    sb.append("    agentAddressChange: ").append(toIndentedString(agentAddressChange)).append("\n");
     sb.append("    telephone: ").append(toIndentedString(telephone)).append("\n");
     sb.append("    countrySpecific: ").append(toIndentedString(countrySpecific)).append("\n");
     sb.append("    location: ").append(toIndentedString(location)).append("\n");
@@ -728,6 +1043,20 @@ public class BusinessDataFields {
     openapiFields.add("ArticleOfAssociation");
     openapiFields.add("RegistrationDetails");
     openapiFields.add("AnnualReport");
+    openapiFields.add("RegisterReport");
+    openapiFields.add("CreditCheck");
+    openapiFields.add("CreditReport");
+    openapiFields.add("GisaExtract");
+    openapiFields.add("VrExtract");
+    openapiFields.add("RegisterCheck");
+    openapiFields.add("TradeRegisterReport");
+    openapiFields.add("BeneficialOwnersCheck");
+    openapiFields.add("FiledChanges");
+    openapiFields.add("FiledDocuments");
+    openapiFields.add("AnnualAccounts");
+    openapiFields.add("CompletePlus");
+    openapiFields.add("ArticleOfAuthority");
+    openapiFields.add("AgentAddressChange");
     openapiFields.add("Telephone");
     openapiFields.add("CountrySpecific");
     openapiFields.add("Location");
